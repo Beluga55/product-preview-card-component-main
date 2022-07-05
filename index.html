@@ -1,17 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-</head>
-<body>
+    <title>Frontend Mentor | Product preview card component</title>
 
-  <!-- Preview
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Main -->
+    <main>
+      <!-- The Only Section -->
+      <section class="card__container container">
+        <div class="card__first">
+          <img
+            class="hide-for-mobile"
+            src="images/image-product-mobile.jpg"
+            alt=""
+          />
+          <img
+            src="images/image-product-desktop.jpg"
+            alt=""
+            class="hide-for-desktop"
+          />
+        </div>
+        <div class="card__second">
+          <p class="span__perfume">Perfume</p>
+          <h1 class="h1__perfume">Gabrielle Essence Eau De Parfum</h1>
+          <p class="paragraph__perfume">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+
+          <div class="card__price">
+            <div class="first__price">$149.99</div>
+            <div class="second__price">$169.99</div>
+          </div>
+
+          <!-- Button -->
+          <div class="button">
+            <div class="first__element">
+              <img src="images/icon-cart.svg" alt="" />
+            </div>
+
+            <div class="second__element">Add to Cart</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Preview
 
   Gabrielle Essence Eau De Parfum
 
@@ -22,6 +69,5 @@
   $169.99
 
   Add to Cart -->
-  
-</body>
+  </body>
 </html>
